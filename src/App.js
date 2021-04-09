@@ -17,8 +17,15 @@ function App() {
         >
           <source src="mp4/bg2.mp4" type="video/mp4" />
         </video>
-        <Route exact path="/" component={Landing} />
-        <Route path="/about" component={About} />
+        <Route
+          exact
+          path="https://axeian.github.io/QC-Interest-Group/"
+          component={Landing}
+        />
+        <Route
+          path="https://axeian.github.io/QC-Interest-Group/about"
+          component={About}
+        />
       </div>
     </Router>
   );

@@ -22,7 +22,7 @@ export default function NavBar() {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <Link
-                  to="/"
+                  to="https://axeian.github.io/QC-Interest-Group/"
                   className="nav-link text-uppercase font-weight-bold "
                 >
                   Home <span className="sr-only">(current)</span>
@@ -30,7 +30,7 @@ export default function NavBar() {
               </li>{" "}
               <li className="nav-item">
                 <Link
-                  to="/about"
+                  to="https://axeian.github.io/QC-Interest-Group/about"
                   className="nav-link text-uppercase font-weight-bold "
                 >
                   About
