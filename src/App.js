@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./components/About";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Landing from "./components/Landing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <div className="App">
+        <NavBar />
+        <video
+          playsInline="playsinline"
+          autoPlay="autoplay"
+          muted="muted"
+          loop="loop"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <source src="mp4/bg2.mp4" type="video/mp4" />
+        </video>
+        <Route exact path="/" component={Landing} />
+        <Route path="/about" component={About} />
+      </div>
+    </Router>
   );
 }
 
